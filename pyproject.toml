@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "openai-api-python-bootcamp-andrei"
+version = "0.1.0"
+description = ""
+authors = ["Noah Kim <dongwoo_333@hanmail.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ipython = "^8.12.0"
+jupyter = "^1.0.0"
+openai = "^0.27.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
