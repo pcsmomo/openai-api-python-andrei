@@ -44,4 +44,8 @@ jupyter notebook
 poetry add openai
 ```
 
+### 13. Tokens
+
+- [OpenAI API - Tokenizer](https://platform.openai.com/tokenizer)
+
 </details>
