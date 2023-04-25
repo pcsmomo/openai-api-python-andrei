@@ -48,4 +48,25 @@ poetry add openai
 
 - [OpenAI API - Tokenizer](https://platform.openai.com/tokenizer)
 
+### 16. Prompt Engineering
+
+````md
+3. Be specific and descriptive
+
+```py
+# GOOD
+user_prompt = 'Configure BGP on two routers.'
+
+# BETTER
+user_prompt = '''Configure BGP on two routers and then explain in detail each command.
+1. The routers run in the same AS.
+2. The AS number is 45653
+3. Configure authentication using MD5 and password fddk&73}'''
+```
+
+for more example below
+````
+
+[📁 Prompt Engineering.md](./02-dive-into-openai-api/16-prompts.md)
+
 </details>
