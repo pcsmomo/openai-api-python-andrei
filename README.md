@@ -69,4 +69,17 @@ for more example below
 
 [📁 Prompt Engineering.md](./02-dive-into-openai-api/16-prompts.md)
 
+### 17. Image Generation Using the DALL-E Model
+
+[Image generation - OpenAI API Doc](https://platform.openai.com/docs/guides/images)
+
+### 20. Speech Recognition With Whisper
+
+[Speech to text - OpenAI API Doc](https://platform.openai.com/docs/guides/speech-to-text)
+
+- [Ronald Reagan - Tear Down this Wall](http://www.historyplace.com/speeches/reagan-tear-down.htm)
+  - [Ronald Reagan - Original script](./02-dive-into-openai-api/19-rr-original.txt)
+  - [Ronald Reagan - Transcript](./02-dive-into-openai-api/19-rr-original.txt)
+    - 100% correct
+
 </details>
