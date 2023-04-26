@@ -82,4 +82,12 @@ for more example below
   - [Ronald Reagan - Transcript](./02-dive-into-openai-api/19-rr-original.txt)
     - 100% correct
 
+## Section 6: Project #4: YouTube Videos Summary Generator
+
+### 32. Building a YouTube Downloader With Python
+
+```sh
+poetry add pytube
+```
+
 </details>
