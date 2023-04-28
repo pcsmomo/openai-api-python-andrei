@@ -96,4 +96,21 @@ poetry add pytube
 
 [Debate for the location of import statements](https://stackoverflow.com/questions/128478/should-import-statements-always-be-at-the-top-of-a-module)
 
+## Section 8: Project #6: Boost Your Linux Sysadmin Capabilities with ChatGPT (ShellGPT)
+
+### 41. Installing and Configuring ShellGPT
+
+[Shell-GPT](https://github.com/TheR1D/shell_gpt)
+
+```sh
+poetry add shell-gpt
+
+export OPENAI_API-KEY=<MY_OPENAI_API_KEY>
+# add it to ~/.zshrc or ~/bash_aliases for persistency
+
+cat ~/.config/shell_gpt/.sgptrc
+
+sgpt "Distance to Mars"
+```
+
 </details>
