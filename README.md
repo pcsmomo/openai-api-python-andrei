@@ -102,15 +102,87 @@ poetry add pytube
 
 [Shell-GPT](https://github.com/TheR1D/shell_gpt)
 
+#### basic setup for pip
+
+```sh
+python3 --version
+sudo apt install python3-pip
+pip3 --version
+sudo apt install python3-venv
+
+mkdir ~/.shellgpt
+cd shellgpt
+python3 -m venv gpt_cli
+source gpt_cli/bin/activate
+
+pip3 install shell-gpt
+```
+
+#### basic setup for poetry
+
 ```sh
 poetry add shell-gpt
+poetry shell
+```
 
-export OPENAI_API-KEY=<MY_OPENAI_API_KEY>
+#### use shell-gpt
+
+```
+export OPENAI_API_KEY=<MY_OPENAI_API_KEY>
+env | grep OPENAI_API_KEY
 # add it to ~/.zshrc or ~/bash_aliases for persistency
 
 cat ~/.config/shell_gpt/.sgptrc
 
 sgpt "Distance to Mars"
+```
+
+### 42. Using ShellGPT like a PRO
+
+#### Simple Query
+
+```sh
+sgpt --help
+
+sgpt "default location for sshd configuration file"
+sgpt "default location for the key-pair used by SSH for authentication"
+sgpt "command to show docker images. Answer with the command only"
+```
+
+#### Shell Query
+
+```sh
+# --execute -e is deprecated
+sgpt --shell "update my system"
+sgpt --shell "list all files in /var/log sorted by size"
+sgpt --shell "list all files in /var/log sorted by size"
+sgpt -s "create a new user called dan and add it to the sudo group"
+# sudo adduser dan && sudo usermod -aG sudo dan
+sgpt -s "show all open ports"
+# sudo lsof -i -P -n | grep LISTEN
+```
+
+```sh
+sgpt -s "create a firewall to drop all incoming ssh traffic"
+# sudo ufw deny ssh
+sgpt -s "create iptables rules to drop all incoming ssh traffic"
+# sudo iptables -A INPUT -p tcp --dport ssh -j DROP
+sgpt -s "create iptables rules to drop all incoming ssh traffic except coming from 12.45.3.5"
+# sudo iptables -A INPUT -p tcp --dport ssh -s 12.45.3.5 ACCPET
+# sudo iptables -A INPUT -p tcp --dport ssh -j DROP
+```
+
+#### Bash Script
+
+```sh
+sgpt --code "Bash script that prompts the user for a directory and then creates an archive of that directory. Also check that the directory exists" > backup_dir.sh
+mkdir dir1
+ls > dir1/a.txt
+chmod +x backup_dir.sh
+./backup_dir.sh
+# Enter directory path: dir1
+ls
+# archive.tar.gz
 ```
 
 </details>
