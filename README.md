@@ -185,4 +185,41 @@ ls
 # archive.tar.gz
 ```
 
+### 43. The Chat Feature of ShellGPT
+
+It remembers the context
+
+```sh
+sgpt --chat ssh --code "Python script that runs commands on a remote host using ssh" > remote_ssh.py
+sgpt --chat ssh --code "remote ip=200.0.0.1 and for authentication use: user=admin, password=asdfasdfsecret, port=99" > remote_ssh_2.py
+```
+
+```sh
+sgpt --chat files --shell "What are the files in /var/log?"
+# ls /var/log
+sgpt --chat files --shell "What are the files in /var/log?"
+# ls -ilS /var/log
+```
+
+```sh
+sgpt --list-chats
+sgpt --show-chat ssh
+```
+
+#### Temperature
+
+```sh
+cd dir
+ls > b.txt
+touch c.txt
+ls
+# a.txt b.txt c.txt
+
+sgpt --temperature 0 --code "bash script that renames all files in the current directory to \"current date\" + \"old name\"" > rename_files.sh
+chmod +x rename_files.sh
+./rename_files.sh
+ls
+# 2023-05-03-a.txt  2023-05-03-b.txt  2023-05-03-c.txt  2023-05-03-rename_files.sh
+```
+
 </details>
