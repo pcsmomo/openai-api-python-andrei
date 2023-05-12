@@ -131,3 +131,8 @@ dmypy.json
 # template file
 template.ipynb
 dalle1.png
+
+
+# data file
+prj-06-book-recommendation/data/*
+!prj-06-book-recommendation/data/data-file-download.md
