@@ -102,8 +102,14 @@ poetry add pytube
 
 ```sh
 poetry add numpy
-poetry add matplotlib scikit-learn plotly
-poetry add scipy
+poetry add matplotlib scikit-learn plotly pandas
+poetry add scipy  # have to fix python version to ">=3.11,<3.12" in pyproject.toml
+```
+
+### 42. Finding Similarities Using Embeddings
+
+```sh
+poetry add tiktoken
 ```
 
 ## Section 10: Project #7: Boost Your Linux Sysadmin Capabilities with ChatGPT (ShellGPT)
