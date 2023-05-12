@@ -96,9 +96,19 @@ poetry add pytube
 
 [Debate for the location of import statements](https://stackoverflow.com/questions/128478/should-import-statements-always-be-at-the-top-of-a-module)
 
-## Section 8: Project #6: Boost Your Linux Sysadmin Capabilities with ChatGPT (ShellGPT)
+## Section 8: Text Embeddings
 
-### 41. Installing and Configuring ShellGPT
+### 41. Generating Simple Embeddings
+
+```sh
+poetry add numpy
+poetry add matplotlib scikit-learn plotly
+poetry add scipy
+```
+
+## Section 10: Project #7: Boost Your Linux Sysadmin Capabilities with ChatGPT (ShellGPT)
+
+### 51. Installing and Configuring ShellGPT
 
 [Shell-GPT](https://github.com/TheR1D/shell_gpt)
 
@@ -137,7 +147,7 @@ cat ~/.config/shell_gpt/.sgptrc
 sgpt "Distance to Mars"
 ```
 
-### 42. Using ShellGPT like a PRO
+### 52. Using ShellGPT like a PRO
 
 #### Simple Query
 
@@ -185,7 +195,7 @@ ls
 # archive.tar.gz
 ```
 
-### 43. The Chat Feature of ShellGPT
+### 53. The Chat Feature of ShellGPT
 
 It remembers the context
 
