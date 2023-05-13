@@ -117,6 +117,18 @@ poetry add tiktoken
 - [Nomic AI - Atlas: Visualising tool](https://docs.nomic.ai/index.html)
 - [Nomic AI - Atlas: Collection of maps](https://docs.nomic.ai/collection_of_maps.html)
 
+### 49. Displaying Embeddings on Atlas
+
+- Signup Nomic AI
+- [Nomic AI - Dashboard](https://atlas.nomic.ai/dashboard)
+
+```sh
+poetry add nomic
+nomic login
+```
+
+[Visualized Book Project](https://atlas.nomic.ai/map/4cc58c10-50ed-4dc4-892d-6772326df289/da754422-3d7f-471f-8179-e1ba251a3a7e)
+
 ## Section 10: Project #7: Boost Your Linux Sysadmin Capabilities with ChatGPT (ShellGPT)
 
 ### 51. Installing and Configuring ShellGPT
