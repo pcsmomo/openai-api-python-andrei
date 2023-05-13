@@ -112,6 +112,11 @@ poetry add scipy  # have to fix python version to ">=3.11,<3.12" in pyproject.to
 poetry add tiktoken
 ```
 
+### 48. Visualizing Embeddings
+
+- [Nomic AI - Atlas: Visualising tool](https://docs.nomic.ai/index.html)
+- [Nomic AI - Atlas: Collection of maps](https://docs.nomic.ai/collection_of_maps.html)
+
 ## Section 10: Project #7: Boost Your Linux Sysadmin Capabilities with ChatGPT (ShellGPT)
 
 ### 51. Installing and Configuring ShellGPT
